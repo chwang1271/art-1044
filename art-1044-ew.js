@@ -1,4 +1,4 @@
-const targetWindow = window.open('https://ew-local-dev.a-ue1.ew:8443/sweepstakes', '_blank');
+const targetWindow = window.open('https://ew-local-dev.a-ue1.ew.com:8443/sweepstakes', '_blank');
 let interval = setInterval(() => {
     if (targetWindow.closed) {
         clearInterval(interval);
