@@ -8,7 +8,7 @@ let interval = setInterval(() => {
 
     if (iframe && iframe.location.origin === window.location.origin) {
         const script = iframe.document.createElement('script');
-        script.textContent = `window.parent.postMessage({redirectExternalURL:'https://www.dailypaws.com'},'*')`;
+        script.textContent = `window.parent.postMessage({redirectExternalURL:'https://www.google.com'},'*')`;
         iframe.document.body.appendChild(script);
         clearInterval(interval);
     }
